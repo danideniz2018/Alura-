@@ -1,0 +1,79 @@
+.cabeçalho_menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none; /* Oculta a lista por padrão */
+    position: absolute;
+    top: 100%;
+    width: 60vw; /* Definindo a largura da lista */
+    background-color: var(--#181c1f); /* Mover para aqui */
+    z-index: 1000; /* Adicionando z-index para que apareça acima de outros elementos */
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block; /* Exibe a lista quando o checkbox está marcado */
+}
+
+.lista-menu__titulo, 
+.lista-menu__item {
+    padding: 1em; /* Corrigido para usar ponto e não vírgula */
+    background-color: var(--#181c1f); /* Mover para o bloco correto */
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase; /* Mantido em um só lugar */
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--branco);
+  }
+  
+  .lista-menu__titulo,
+  .lista-menu__item {
+    padding: 1em;
+  }
+  
